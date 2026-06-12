@@ -342,9 +342,13 @@ box-shadow:0 0 20px #60a5fa;
 }
 
 
-.logo i{
+.logo{
 
-font-size:30px;
+height:70px;
+display:flex;
+align-items:center;
+overflow:hidden;
+
 }
 
 
