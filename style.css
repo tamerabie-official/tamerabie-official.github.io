@@ -333,8 +333,8 @@ color:#60a5fa;
 
 .logo img{
 
-width:60px;
-height:60px;
+width:75px;
+height:75px;
 object-fit:cover;
 border-radius:50%;
 box-shadow:0 0 20px #60a5fa;
@@ -344,10 +344,9 @@ box-shadow:0 0 20px #60a5fa;
 
 .logo{
 
-height:70px;
 display:flex;
 align-items:center;
-overflow:hidden;
+gap:15px;
 
 }
 
