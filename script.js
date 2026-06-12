@@ -68,3 +68,19 @@ localStorage.setItem("visitors",count);
 
 
 document.getElementById("visitors").innerHTML=count;
+let count = localStorage.getItem("visitors");
+
+if(!count){
+
+count = 1;
+
+}else{
+
+count++;
+
+}
+
+localStorage.setItem("visitors", count);
+
+
+document.getElementById("visitors").innerHTML = count;
