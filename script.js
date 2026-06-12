@@ -1,20 +1,54 @@
-console.log("Welcome To Tamer Rabie Official Website");
+let english=false;
 
-window.addEventListener("scroll",()=>{
+function changeLang(){
 
-const cards=document.querySelectorAll(".card");
+const title=document.getElementById("title");
+const subtitle=document.getElementById("subtitle");
+const text=document.getElementById("text");
 
-cards.forEach(card=>{
 
-const position=card.getBoundingClientRect().top;
+if(!english){
 
-if(position < window.innerHeight-100){
+title.innerHTML="Hello, I am Tamer Rabie";
 
-card.style.opacity="1";
-card.style.transform="translateY(0)";
+subtitle.innerHTML=
+"Teacher | Content Creator | English Learning";
+
+
+text.innerHTML=
+"I create educational content to help people improve English language skills and digital learning.";
+
+
+document.documentElement.lang="en";
+document.body.dir="ltr";
+
+english=true;
+
+
+}else{
+
+
+title.innerHTML="مرحباً أنا تامر ربيع";
+
+
+subtitle.innerHTML=
+"مدرس وصانع محتوى تعليمي";
+
+
+text.innerHTML=
+"أقدم محتوى تعليمي يساعد على تطوير اللغة الإنجليزية والتعلم الرقمي وصناعة المحتوى.";
+
+
+document.documentElement.lang="ar";
+document.body.dir="rtl";
+
+english=false;
+
 
 }
 
-});
+}
 
-});
+
+
+console.log("Tamer Rabie Website v2 Loaded");
