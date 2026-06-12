@@ -52,3 +52,19 @@ english=false;
 
 
 console.log("Tamer Rabie Website v2 Loaded");
+let count=localStorage.getItem("visitors");
+
+if(!count){
+
+count=1;
+
+}else{
+
+count++;
+
+}
+
+localStorage.setItem("visitors",count);
+
+
+document.getElementById("visitors").innerHTML=count;
