@@ -2,15 +2,12 @@
 <html lang="ar" dir="rtl">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Tamer Rabie | Teacher & Content Creator</title>
 
-<meta name="description" content="Tamer Rabie - Teacher, Content Creator and English Learning Hub">
-
-<link rel="icon" type="image/png" href="images/logo.png">
+<link rel="icon" href="images/favicon.jpg">
 
 <link rel="stylesheet" href="style.css">
 
@@ -27,25 +24,19 @@ AR / EN
 </button>
 
 
-<div class="logo">
+<div class="brand">
+
 <img src="images/logo.png">
-</div>
-
-
-  
-<div class="header">
 
 <h2>Tamer Rabie</h2>
 
-<div class="logo">
-<img src="images/logo.png">
 </div>
 
-</div>
+</header>
 
 
 
-<main>
+<main class="container">
 
 
 <img class="profile" src="images/profile.jpg">
@@ -57,6 +48,7 @@ AR / EN
 </h1>
 
 
+
 <h3 id="subtitle">
 مدرس وصانع محتوى تعليمي
 </h3>
@@ -64,41 +56,27 @@ AR / EN
 
 
 <p id="text">
-
-أقدم محتوى تعليمي يساعد على تطوير اللغة الإنجليزية والتعلم الرقمي وصناعة المحتوى.
-
+أقدم محتوى تعليمي يساعد على تطوير اللغة الإنجليزية
+والتعلم الرقمي وصناعة المحتوى.
 </p>
 
 
 
 <div class="buttons">
 
-
-<a href="https://youtube.com/@englishhub-f1z"
-target="_blank">
-
+<a href="https://youtube.com/@englishhub-f1z">
 YouTube ▶
-
 </a>
 
 
-
-<a href="https://wa.me/201131413209"
-target="_blank">
-
-WhatsApp ☏
-
+<a href="https://wa.me/201131413209">
+WhatsApp ☎
 </a>
 
 
-
-<a href="https://www.facebook.com/share/18HkjvLWhJ/"
-target="_blank">
-
+<a href="#">
 Facebook
-
 </a>
-
 
 </div>
 
@@ -107,89 +85,7 @@ Facebook
 
 
 
-<a class="whatsapp"
-href="https://wa.me/201131413209">
-
-☏
-
-</a>
-
-
-
-<script>
-
-let english=false;
-
-
-function changeLang(){
-
-
-let title =
-document.getElementById("title");
-
-
-let subtitle =
-document.getElementById("subtitle");
-
-
-let text =
-document.getElementById("text");
-
-
-
-if(!english){
-
-
-title.innerHTML =
-"Hello, I am Tamer Rabie";
-
-
-subtitle.innerHTML =
-"Teacher | Content Creator | English Learning";
-
-
-text.innerHTML =
-"I create educational content to help people improve English language skills and digital learning.";
-
-
-document.body.dir="ltr";
-
-english=true;
-
-
-}
-
-else{
-
-
-title.innerHTML =
-"مرحباً أنا تامر ربيع";
-
-
-subtitle.innerHTML =
-"مدرس وصانع محتوى تعليمي";
-
-
-text.innerHTML =
-"أقدم محتوى تعليمي يساعد على تطوير اللغة الإنجليزية والتعلم الرقمي وصناعة المحتوى.";
-
-
-document.body.dir="rtl";
-
-
-english=false;
-
-
-}
-
-
-}
-
-
-</script>
-
-
+<script src="script.js"></script>
 
 </body>
-
 </html>
