@@ -331,14 +331,13 @@ color:#60a5fa;
   }
 /* Logo */
 
-.logo{
+.logo img{
 
-display:flex;
-align-items:center;
-gap:10px;
-font-size:28px;
-font-weight:bold;
-color:#60a5fa;
+width:60px;
+height:60px;
+object-fit:cover;
+border-radius:50%;
+box-shadow:0 0 20px #60a5fa;
 
 }
 
