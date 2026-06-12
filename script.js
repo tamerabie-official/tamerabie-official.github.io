@@ -84,3 +84,27 @@ localStorage.setItem("visitors", count);
 
 
 document.getElementById("visitors").innerHTML = count;
+function changeLang(){
+
+let title = document.querySelector("h1");
+let desc = document.querySelector("p");
+
+if(document.documentElement.lang === "en"){
+
+document.documentElement.lang = "ar";
+
+title.innerHTML = "مرحباً أنا تامر ربيع";
+
+desc.innerHTML = "أقدم محتوى تعليمي يساعد على تطوير اللغة الإنجليزية والتعلم الرقمي وصناعة المحتوى.";
+
+}else{
+
+document.documentElement.lang = "en";
+
+title.innerHTML = "Hello, I am Tamer Rabie";
+
+desc.innerHTML = "I create educational content to help people improve English language skills and digital learning.";
+
+}
+
+}
